@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3efe3">
+  <meta name="description" content="A tiny interactive case file about Maryno, a cat who investigates footsteps outside the door.">
+  <title>Who's at the Door? — Maryno's Case File</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topline">
+      <a class="wordmark" href="#top" aria-label="Maryno's Case File home">M / C</a>
+      <span class="topline-label">A SMALL INVESTIGATION</span>
+      <span class="case-number">FIELD NOTE&nbsp; 01</span>
+    </header>
+
+    <section class="hero" id="top" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> MARYNO'S CASE FILE</p>
+        <h1 id="page-title">Who's at<br>the door<span class="question-mark">?</span></h1>
+        <p class="intro">A sound outside. Maryno is already investigating.</p>
+        <a class="follow-link" href="#clue">
+          <span>Follow the paw prints</span>
+          <span class="arrow" aria-hidden="true">↘</span>
+        </a>
+        <p class="hand-note">One curious cat.<br>One very busy doorway.</p>
+      </div>
+
+      <div class="scene" role="img" aria-label="A simple illustration of a cat waiting beside a closed door">
+        <div class="scene-stamp">OBSERVED<br>AT HOME</div>
+        <div class="door-frame">
+          <div class="door">
+            <span class="door-number">01</span>
+            <span class="door-knob"></span>
+            <span class="light-line"></span>
+          </div>
+          <div class="door-shadow"></div>
+        </div>
+        <div class="cat" aria-hidden="true">
+          <span class="cat-ear cat-ear-left"></span>
+          <span class="cat-ear cat-ear-right"></span>
+          <span class="cat-body"></span>
+          <span class="cat-tail"></span>
+          <span class="cat-eye cat-eye-left"></span>
+          <span class="cat-eye cat-eye-right"></span>
+          <span class="cat-nose"></span>
+        </div>
+        <span class="floor-line"></span>
+        <span class="scene-caption">THE USUAL POST</span>
+        <span class="paw paw-one" aria-hidden="true">✦</span>
+        <span class="paw paw-two" aria-hidden="true">✦</span>
+        <span class="paw paw-three" aria-hidden="true">✦</span>
+      </div>
+    </section>
+
+    <section class="case-section" id="clue" aria-labelledby="clue-title">
+      <div class="section-marker"><span>01</span><span class="marker-line"></span><span>THE CLUE</span></div>
+      <div class="case-card">
+        <div class="case-card-top">
+          <p class="card-kicker">CLUE 01 <span>·</span> FOOTSTEPS</p>
+          <span class="sound-icon" aria-hidden="true">〰</span>
+        </div>
+        <h2 id="clue-title">Someone passes<br>the door.</h2>
+        <p class="clue-copy">Maryno heads over to see who it is. The investigation begins before the visitor even knocks.</p>
+        <button class="reveal-button" id="reveal-button" type="button" aria-expanded="false" aria-controls="observation">
+          <span class="button-label">Open the observation note</span>
+          <span class="button-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="observation" id="observation" hidden>
+          <span class="note-label">NOTE FROM THE OBSERVER</span>
+          <p>He goes straight to the door to look for the person passing by. No one gets past unnoticed.</p>
+        </div>
+      </div>
+      <div class="route-note" aria-hidden="true">
+        <span class="route-paw">✦</span>
+        <span class="route-paw">✦</span>
+        <span class="route-paw">✦</span>
+        <span class="route-caption">SOUND → DOOR → MARYNO</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="case-status"><span class="status-dot"></span> CASE STATUS: STILL CURIOUS</p>
+      <p class="footer-note">More clues may appear at any moment.</p>
+      <a class="back-link" href="#top">BACK TO THE CASE ↑</a>
+    </footer>
+  </main>
+</body>
+</html>
